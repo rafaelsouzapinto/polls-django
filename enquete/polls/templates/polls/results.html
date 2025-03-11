@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1e1e1e;
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #result {
+            width: 300px;
+            height: 500px;
+            background-color: #fff;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px 0px;
+        }
+
+        #result > h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00448d;
+        }
+
+        #result > ul {
+            list-style: none;
+        }
+        #result > ul > li {
+            padding: 10px 0px;
+        }
+
+        #result a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 5px;
+            transition: 0.5s ease;
+        }
+
+        #result a:hover {
+            background-color: #00448d;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <section id="result">
+            <h1>{{ question.question_text }}</h1>
+            <ul>
+                {% for choice in question.choice_set.all %}
+                    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+                {% endfor %}
+            </ul>
+            <a href="{% url 'polls:vote' question.id %}">Vote again?</a>
+            <a href="{% url 'polls:index' %}">See other poll?</a>
+        </section>
+    </div>
+</body>
+</html>
