@@ -5,7 +5,7 @@ Essa aplicação foi criada no intuito de adquirir meu primeiro contato prático
 
 Se trata de uma aplicação para enquetes, que conta com 3 telas, sendo elas: Uma exibição com todas as votações disponíveis, a página de votação e a página de resultado da votação.
 
-Mais detalhes na documentação do framework, acesse [clicando aqui.](https://docs.djangoproject.com/pt-br/5.1/intro/)
+Para mais detalhes, acesse a documentação do framework [clicando aqui.](https://docs.djangoproject.com/pt-br/5.1/intro/)
   
 ## Tecnologias utilizadas 💻
 - Python
