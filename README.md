@@ -19,10 +19,10 @@ https://github.com/rafaelsouzapinto/polls-django
 ```
 
 - Verificar instalação:
-
-Tanto o python quanto o django foram instalados no ambiente virtual, é possível verificar as versões usando o comando `pip freeze` no command prompt.
-
-Caso não retorne nada, talvez seja necessário reinstalar o django usando `pip install django` no command prompt.
+Instale o django usando no command prompt:
+```
+pip install django
+```
 
 - Iniciar aplicação:
 
