@@ -1,7 +1,7 @@
 # Polls Django
 
 ## Sobre o projeto 🚀
-Essa aplicação foi criada no intuito de adquirir meu primeiro contato prático com o framework Django!
+Essa aplicação foi criada no intuito de adquirir contato prático com o framework Django!
 
 Se trata de uma aplicação para enquetes, que conta com 3 telas, sendo elas: Uma exibição com todas as votações disponíveis, a página de votação e a página de resultado da votação.
 
